@@ -17,4 +17,12 @@ public class SortingBigOSquaredTest {
         SortingBigOSquared.selection(orgArr);
         assertArrayEquals(expArr, orgArr);
     }
+
+    @org.junit.Test
+    public void bubble() {
+        int[] orgArr = {5, 2, 3, 6, 4, 1, 7};
+        int[] expArr = {1, 2, 3, 4, 5, 6, 7};
+        SortingBigOSquared.bubble(orgArr);
+        assertArrayEquals(expArr, orgArr);
+    }
 }
